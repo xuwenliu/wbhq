@@ -11,24 +11,6 @@ Vue.config.productionTip = false
 import './assets/flexible.js'
 import './assets/reset.css'
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //过滤器
 Vue.filter("idCard",function(value) {
 	var ayy = value.split('');

@@ -12,7 +12,7 @@
 							<p>18281235467</p></li>
 						<li class="appellation">大掌柜</li>
 						<li class="status">
-							<i>></i>
+							<img src="../../assets/img/right.png">
 							
 						</li>
 					</ol>
@@ -25,7 +25,7 @@
 							<p>18281235467</p></li>
 						<li class="appellation"></li>
 						<li class="status">
-							<h2>审核中</h2><i>></i>
+							<h2>审核中</h2><img src="../../assets/img/right.png">
 							
 						</li>
 					</ol>
@@ -38,7 +38,7 @@
 							<p>18281235467</p></li>
 						<li class="appellation"></li>
 						<li class="status">
-							<h2>未审核</h2><i>></i>
+							<h2>未审核</h2><img src="../../assets/img/right.png">
 							<h3>点我去审核</h3>
 						</li>
 					</ol>
@@ -51,12 +51,20 @@
 							<p>18281235467</p></li>
 						<li class="appellation"></li>
 						<li class="status">
-							<h2>未通过</h2><i>></i>
+							<h2>未通过</h2><img src="../../assets/img/right.png">
 							<h3>重新去审核</h3>
 						</li>
 					</ol>
 				</li>
 			</ul>
+		</div>
+		<div class="add">
+			<div class="circle">
+				<div class="line-box">
+					<div class="h-line"></div>
+					<div class="v-line"></div>
+				</div>
+			</div>
 		</div>
   	</div>
 </template>
@@ -96,15 +104,15 @@ export default {
 				height: 1.92rem;
 				padding-right:0.37333rem;
 				.img{
-					padding:0.24rem;
-				}
-				li{
+					padding:0.24rem; 
 					img{
 						width:1.49333rem;
 						height:1.49333rem;
 						display: block;
 						border-radius: 0.74667rem;
 					}
+				}
+				li{
 					h1{
 						font-size: 0.37333rem;
 						color: #333;
@@ -138,12 +146,44 @@ export default {
 				}
 				.status{
 					width: 1.6rem;
-					i{
+					img{
 						float: right;
+						vertical-align: middle;
 					}
 				}
 			}
 		}
+	}
+}
+.add{
+	height: 1.33333rem;
+	width: 100%;
+	margin-top: 0.53333rem;
+	.circle{
+		height: 1.33333rem;
+		width: 1.33333rem;
+		margin: 0 auto;
+		border-radius: 50%;
+		-moz-box-shadow:0px 10px 12px #f1e8dd; 
+		-webkit-box-shadow:0px 10px 12px #f1e8dd; 
+		box-shadow:0px 10px 12px #f1e8dd;
+		.line-box{
+			width: 0.93333rem;
+			height: 0.93333rem; 
+			position: relative;
+			top: 50%;
+			left: 50%;
+			margin-left: -0.46667rem;
+			div{
+				width: 0.93333rem;
+				height: 0.05333rem;
+				background-color: #ff9b0e;
+			}
+			.v-line{
+				transform:rotate(90deg);
+			}
+		}
+		
 	}
 }
 </style>
