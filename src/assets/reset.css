@@ -90,7 +90,6 @@ i,em{ font-style: normal}
 
 /*BASE CSS*/
 /*clear*/
-.clearfix {zoom:1;}
 .clearfix::after,
 .clearfix::before{
     content:"";
