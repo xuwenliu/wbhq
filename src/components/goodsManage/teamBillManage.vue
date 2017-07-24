@@ -161,6 +161,7 @@ export default {
 		}
 	}
 	.teamBillManage-list{
+		background-color:#f0f0f0; 
 		.list-item{
 			margin-top: 0.21333rem;
 			.teamBillManage-title {
